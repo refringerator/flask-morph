@@ -3,10 +3,8 @@
 # Документация по библиоткее
 # https://pymorphy2.readthedocs.io/en/stable/user/grammemes.html
 
-from venv import create
 from flask import Flask, request
 import pymorphy2
-
 
 
 morph = pymorphy2.MorphAnalyzer()
