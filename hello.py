@@ -13,5 +13,11 @@ def hello_world(word: str):
     hz = mp.inflect({'gent'})
     return str(hz.word)
 
+@app.route('/2/<word>')
+def hello_world2(word: str):
+    mp = morph.parse(word)[0]
+    hz = mp.inflect({'ablt'})
+    return str(hz.word)
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
